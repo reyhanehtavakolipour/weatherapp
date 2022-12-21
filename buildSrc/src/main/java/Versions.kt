@@ -1,0 +1,33 @@
+object Versions {
+    const val compileSdk = 33
+    const val minSdk = 23
+    const val targetSdk = 33
+    const val versionCode= 1
+    const val versionName = "1.0"
+    const val v_androidx_core = "1.7.0"
+    const val v_androidx_compat = "1.4.1"
+    const val v_google_material = "1.5.0"
+    const val v_androidx_constraintlayout = "2.1.3"
+    const val v_test_junit = "4.13.2"
+    const val v_androidx_test_junit = "1.1.3"
+    const val v_androidx_test_espresso ="3.4.0"
+    const val v_androidx_test_core = "1.4.0"
+    const val v_androidx_arch_core = "2.1.0"
+    const val v_android_arch_core = "1.0.0"
+    const val v_test_coroutine = "1.4.2"
+    const val v_android_test_coroutine = "1.4.2"
+    const val v_androidx_activity = "1.6.0"
+    const val v_hilt_android = "2.44"
+    const val v_kapt_hilt_android = "2.44"
+    const val v_retrofit = "2.9.0"
+    const val v_retrofit_gson = "2.9.0"
+    const val v_okhttp = "4.9.0"
+    const val v_okhttp_interceptor = "4.9.0"
+    const val v_glied = "4.14.2"
+    const val v_glide_compiler = "4.14.2"
+    const val v_circle_image_view = "4.3.1"
+    const val v_swipe_refresh_layout = "1.1.0"
+    const val v_room = "2.4.3"
+    const val v_navigation = "2.5.3"
+    const val v_compose = "1.1.1"
+}

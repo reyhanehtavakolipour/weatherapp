@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="toolbar_title">Weather</string>
+    <string name="not_found">Ooops! Something went wrong</string>
+    <string name="bad_request_error">Bad request</string>
+    <string name="not_valid_authentication_error">Authentication is not valid</string>
+    <string name="unauthorized_request_error">Unauthorized request</string>
+    <string name="service_unavailable_error">Service temporarily unavailable</string>
+    <string name="not_found_error">Page not found</string>
+    <string name="no_network_error">Internet not found</string>
+    <string name="try_again_error">Try again later</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="search_city">Search city here</string>
+    <string name="show_weather">Show Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_list">Location not found!</string>
+</resources>

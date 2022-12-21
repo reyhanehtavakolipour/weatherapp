@@ -1,0 +1,1 @@
+/Users/reyhanehtavakolipour/AndroidStudioProjects/Lone Wolf/WeatherApp/buildSrc/build/classes/kotlin/main/Deps.class:/Users/reyhanehtavakolipour/AndroidStudioProjects/Lone Wolf/WeatherApp/buildSrc/build/classes/kotlin/main/Versions.class

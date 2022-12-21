@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/searchFragment">
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="rtp.reyhanehtpour.weatherapp.ui.fragment.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_weatherListFragment"
+            app:destination="@id/citiesListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/citiesListFragment"
+        android:name="rtp.reyhanehtpour.weatherapp.ui.fragment.CitiesListFragment"
+        android:label="fragment_weather_list"
+        tools:layout="@layout/fragment_cities_list" >
+        <action
+            android:id="@+id/action_weatherListFragment_to_weatherDetailFragment"
+            app:destination="@id/weatherDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherDetailFragment"
+        android:name="rtp.reyhanehtpour.weatherapp.ui.fragment.WeatherDetailFragment"
+        android:label="WeatherDetailFragment" />
+</navigation>

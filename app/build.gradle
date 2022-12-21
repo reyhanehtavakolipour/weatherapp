@@ -1,0 +1,108 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'rtp.reyhanehtpour.weatherapp'
+    compileSdk Versions.compileSdk
+
+    defaultConfig {
+        applicationId "rtp.reyhanehtpour.weatherapp"
+        minSdk Versions.minSdk
+        targetSdk Versions.targetSdk
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
+        compose true
+    }
+
+    sourceSets {
+        String sharedTestDir = 'src/sharedTest/java'
+        test {
+            java.srcDir sharedTestDir
+        }
+        androidTest {
+            java.srcDir sharedTestDir
+        }
+    }
+
+    buildscript{
+        dependencies {
+            classpath(Deps.navigation_arg)
+        }
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.2.0'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation Deps.androidx_core
+    implementation Deps.androidx_compat
+    implementation Deps.google_material
+    implementation Deps.androidx_constraintlayout
+    implementation(Deps.androidx_activity)
+    implementation(Deps.hilt_android)
+    implementation Deps.compose_material
+    kapt(Deps.kapt_hilt_android)
+    implementation Deps.retrofit
+    implementation Deps.retrofit_gson
+    implementation Deps.okhttp
+    implementation Deps.okhttp_interceptor
+    implementation Deps.glied
+    annotationProcessor Deps.glide_compiler
+    implementation(Deps.swipe_refresh_layout)
+    implementation(Deps.room_db)
+    annotationProcessor(Deps.room_compiler)
+    kapt (Deps.room_compiler)
+    implementation(Deps.navigation)
+    implementation(Deps.navigation_ui)
+
+    //test
+    testImplementation Deps.test_junit
+    androidTestImplementation Deps.androidx_test_junit
+    androidTestImplementation Deps.androidx_test_espresso
+    androidTestImplementation Deps.android_arch_core_test
+    testImplementation Deps.android_arch_core_test
+    androidTestImplementation(Deps.androidx_test_core)
+    androidTestImplementation Deps.androidx_arch_core
+    testImplementation Deps.jetbrain_coroutine_test
+    androidTestImplementation Deps.android_jetbrain_coroutine_test
+}
+
+kapt {
+    correctErrorTypes = true
+}
