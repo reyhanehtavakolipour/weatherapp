@@ -1,8 +1,16 @@
 Reyhaneh Tavakolipour
 
+
 ## The trade offs I made and why
 I used livedata to emit api response. If I had more time, I would have used kotlin flow instead.
-Also I would have spent more time on the UI part(like adding some cool animation).
+Also I didn't get a chance to write espresso Ui test since I am moving out from my current house and I'm going to new place on Thursday(22 Dec). Except ui test, I was able to work on rest of requirements. 
+
+## Java Class:
+CityAdapter is the only class in Java. Actually since I used Couroutine inside the app architecture, most of the classes had to be in Kotlin. 
+
+## XML ui:
+- Cities List page
+- Weather page
 
 
 ## More information
